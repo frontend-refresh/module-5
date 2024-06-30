@@ -140,3 +140,7 @@ export default function DoubleDice(){
     );
 }
 ```
+
+Here below is result 
+
+<img src="example-condition2.png" alt="Description of the image" style="border: 1px solid \#fff;">
