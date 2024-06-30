@@ -8,9 +8,9 @@ import Greeter from './Greeter'
 function App() {
   return (
     <div>
-      <Greeter person="Naruto"/>
-      <Greeter person="Sakura"/>
-      <Greeter person="Sasuke"/>
+      <Greeter person="Naruto" from="Jiraya"/>
+      <Greeter person="Sakura" from="Tsunade"/>
+      <Greeter person="Sasuke" from="Orochimaru"/>
     </div>
   );
 }
