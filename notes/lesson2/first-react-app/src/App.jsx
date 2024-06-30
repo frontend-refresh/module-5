@@ -9,15 +9,20 @@ import Die from './Die'
 function App() {
   return (
     <div>
+      <Greeter person="Naruto" from="Jiraya"/>
       <Die numSides={20}/>
+
+      <Greeter person="Sakura" from="Tsunade"/>
       <Die />
+
+      <Greeter person="Sasuke" from="Orochimaru"/>
       <Die numSides={10}/>
+          
+      <Greeter person="Sai"/>
+      <Die />
     </div>
     /*
     <div>
-      <Greeter person="Naruto" from="Jiraya"/>
-      <Greeter person="Sakura" from="Tsunade"/>
-      <Greeter person="Sasuke" from="Orochimaru"/>
     </div>
     */
   );
