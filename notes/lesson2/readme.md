@@ -23,7 +23,7 @@ npm run dev
 
 ### More default props
 
-```
+```js
 export default function Greeter({person="everyone", from="anonymous"}){
     return (
         <>
@@ -59,4 +59,37 @@ Here below is result
 
 <img src="example-defprops2.png" alt="Description of the image" style="border: 1px solid \#000;">
 
+
+
+### Passing arrays and objects to props
+
+You can also pass arrays and objects to props
+
+```js
+export default function ListPicker({values}){
+    const randIdx = Math.floor(Math.random() * values.length);
+    const randElement = values[randIdx];
+
+    return (
+        <div>
+            <p>The list of values will be {values}</p>
+            <p>The random element is {randElement}</p>
+        </div>
+    );
+}
+
+function App() {
+  return (
+    <div>
+      <ListPicker values={[1, 2, 3]}/>
+      <ListPicker values={["a", "b", "c"]}/>
+      <ListPicker values={[1, "x", undefined]}/>
+    </div>
+    );
+}
+```
+
+Here below is result 
+
+<img src="example-props3.png" alt="Description of the image" style="border: 1px solid \#fff;">
 
