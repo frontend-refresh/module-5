@@ -12,3 +12,6 @@
 8. Project
 
 
+### Github repo 
+
+Link for the [github repo project](https://github.com/frontend-refresh/module-5)
