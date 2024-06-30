@@ -9,9 +9,9 @@ import Die from './Die'
 function App() {
   return (
     <div>
-      <Die />
-      <Die />
-      <Die />
+      <Die numSides={20}/>
+      <Die numSides={6}/>
+      <Die numSides={10}/>
     </div>
     /*
     <div>
