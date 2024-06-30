@@ -1,8 +1,8 @@
-# Some react lessons
+# React Basics
 
 ### Lesson plan
 
-1. Intro
+1. Introduction to React
 2. Props
 3. Events
 4. State
