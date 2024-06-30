@@ -34,7 +34,7 @@ export default function Greeter({person="everyone", from="anonymous"}){
 }
 ```
 
-```
+```js
 function App() {
   return (
     <div>
@@ -93,3 +93,53 @@ Here below is result
 
 <img src="example-props3.png" alt="Description of the image" style="border: 1px solid \#fff;">
 
+
+
+
+
+### React conditionals
+
+Here is below example conditional logics outside of `return` function:
+
+```js
+export default function DoubleDice(){
+    const num1 = Math.floor(Math.random() * 3) + 1;
+    const num2 = Math.floor(Math.random() * 3) + 1;
+
+    const result = num1 === num2 ? "You win xD" : "You lose :(";
+
+    return (
+        <div>
+            <h2>{result}</h2>
+            <p>Num1: {num1}</p>
+            <p>Num2: {num2}</p>
+        </div>
+    );
+
+}
+```
+
+Here below is result 
+
+<img src="example-cond.png" alt="Description of the image" style="border: 1px solid \#fff;">
+
+Here is below example conditional logics outside of `return` function:
+
+```js
+export default function DoubleDice(){
+    const num1 = Math.floor(Math.random() * 3) + 1;
+    const num2 = Math.floor(Math.random() * 3) + 1;
+
+    const result = num1 === num2 ? "You win xD" : "You lose :(";
+
+    return (
+        <div>
+            <h2>Double Dice</h2>
+            {num1 === num2 ? <h3>You win!<h3/> : null}
+            <p>Num1: {num1}</p>
+            <p>Num2: {num2}</p>
+        </div>
+    );
+
+}
+```
