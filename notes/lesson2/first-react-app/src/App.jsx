@@ -5,11 +5,16 @@ import './App.css'
 import Chicken from './Chicken'
 import Greeter from './Greeter'
 import Die from './Die'
+import ListPicker from './ListPicker'
 
 function App() {
   return (
     <div>
-      <Greeter person="Naruto" from="Jiraya"/>
+      <ListPicker values={[1, 2, 3]}/>
+    </div>
+    /*
+    <div>
+     <Greeter person="Naruto" from="Jiraya"/>
       <Die numSides={20}/>
 
       <Greeter person="Sakura" from="Tsunade"/>
@@ -20,9 +25,6 @@ function App() {
           
       <Greeter person="Sai"/>
       <Die />
-    </div>
-    /*
-    <div>
     </div>
     */
   );
