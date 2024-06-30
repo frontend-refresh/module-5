@@ -11,6 +11,9 @@ function App() {
   return (
     <div>
       <ListPicker values={[1, 2, 3]}/>
+      <ListPicker values={["a", "b", "c"]}/>
+      <ListPicker values={[1, "x", null]}/>
+
     </div>
     /*
     <div>
