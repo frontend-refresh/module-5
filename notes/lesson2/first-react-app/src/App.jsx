@@ -7,10 +7,14 @@ import Greeter from './Greeter'
 import Die from './Die'
 import ListPicker from './ListPicker'
 import DoubleDice from './DoubleDice'
+import Heading from './Heading'
 
 function App() {
   return (
     <div>
+      <Heading color="magenta" text="welcome!" fontSize="20px"/>
+      <Heading color="teal" text="welcome2!" fontSize="48px"/>
+
       <DoubleDice/>
       <DoubleDice/>
       <DoubleDice/>

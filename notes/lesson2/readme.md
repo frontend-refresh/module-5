@@ -144,3 +144,62 @@ export default function DoubleDice(){
 Here below is result 
 
 <img src="example-condition2.png" alt="Description of the image" style="border: 1px solid \#fff;">
+
+### Dynamic styles
+
+Here is below example how we can add styles into:
+
+```js
+export default function DoubleDice(){
+    const num1 = Math.floor(Math.random() * 3) + 1;
+    const num2 = Math.floor(Math.random() * 3) + 1;
+
+    const styles = {color: num1 === num2 ? "green" : "red"};
+    return (
+        <div className="DoubleDice" style={styles}>
+            <h2>Double Dice</h2>
+            {num1 === num2 && <h3>"You win"</h3>}
+            <p>Num1: {num1}</p>
+            <p>Num2: {num2}</p>
+        </div>
+    );
+}
+```
+
+Here below is result 
+
+<img src="styles-div.png" alt="Description of the image" style="border: 1px solid \#fff;">
+
+Another way to make only `h2` tag change color:
+```js
+export default function DoubleDice(){
+    const num1 = Math.floor(Math.random() * 3) + 1;
+    const num2 = Math.floor(Math.random() * 3) + 1;
+
+    const styles = {color: num1 === num2 ? "green" : "red"};
+    return (
+        <div className="DoubleDice">
+            <h2 style={styles}>Double Dice</h2>
+            {num1 === num2 && <h3>"You win"</h3>}
+            <p>Num1: {num1}</p>
+            <p>Num2: {num2}</p>
+        </div>
+    );
+}
+```
+
+Here below is result 
+
+<img src="styles-h2.png" alt="Description of the image" style="border: 1px solid \#fff;">
+
+
+#### Dynamic style output
+
+Here is the way we will have to add styles
+```js
+export default function Heading( {color = 'olive', text, fontSize }) {
+    return <h1 style={{color: color, fontSize: fontSize }}>{text}</h1>;
+}
+```
+
+! Note that for any CSS property in Javascript, that we pass as props, we will apply camelCase.
