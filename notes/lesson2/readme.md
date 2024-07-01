@@ -203,3 +203,30 @@ export default function Heading( {color = 'olive', text, fontSize }) {
 ```
 
 ! Note that for any CSS property in Javascript, that we pass as props, we will apply camelCase.
+
+
+### Rendering array with map
+
+Here is the way we will have to add styles
+```js
+export default function ColorList({colors}) {
+
+    const lis = colors.map(
+        (color) => <li>{color}</li>
+    );
+
+    return (
+        <div>
+            <p>Color List</p>
+            <ul>{lis}</ul>
+        </div>
+    );
+}
+```
+
+Here below is result 
+
+<img src="render-lis.png" alt="Description of the image" style="border: 1px solid \#fff;">
+
+
+
