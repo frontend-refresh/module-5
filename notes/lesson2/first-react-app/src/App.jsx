@@ -21,6 +21,8 @@ function App() {
       <DoubleDice/>
 
       <ColorList colors={["red", "pink", "purple", "teal"]}/>
+      <ColorList colors={["olive", "orangered", "saltegrey"]}/>
+
     </div>
     /*
     <div>
