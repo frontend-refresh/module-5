@@ -87,3 +87,24 @@ Here below is result
 
 <img src="event-2.png" alt="Description of the image" style="border: 1px solid \#fff;">
 
+
+### branch 3 
+we can use forms
+
+```js
+function handleFormSubmit(evt) {
+    evt.preventDefault;
+    console.log("SUBMITTED THE FORM!!!");
+  }
+  
+
+export default function Form(){
+    return (
+        <div>
+            <form onSubmit={handleFormSubmit}>
+                <button>Submit</button>
+            </form>
+        </div>
+      );
+}
+```
