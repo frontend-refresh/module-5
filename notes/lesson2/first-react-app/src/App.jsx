@@ -11,6 +11,7 @@ import Heading from './Heading'
 import ColorList from './ColorList'
 import ShoppingListItem from "./ShoppingListItem";
 import ShoppingList from './ShoppingList'
+import Clicker from './Clicker'
 
 const data = [
   {item: "eggs", quantity: 12, completed: false },
@@ -18,15 +19,21 @@ const data = [
   {item: "chicken breasts", quantity: 4, completed: false },
   {item: "carrots", quantity: 6, completed: true },
 ];
-
 function App() {
   return (
     <div>
-      <ShoppingList items={data}/>
+      <Clicker />
+      <Clicker />
     </div>
+  );
+}
+
+export default App
+
 
     /*
     <div>
+      <ShoppingList items={data}/>
       <Heading color="magenta" text="welcome!" fontSize="20px"/>
       <Heading color="teal" text="welcome2!" fontSize="48px"/>
 
@@ -56,7 +63,3 @@ function App() {
       <Die />
     </div>
     */
-  );
-}
-
-export default App

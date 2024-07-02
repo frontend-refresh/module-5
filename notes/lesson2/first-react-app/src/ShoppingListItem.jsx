@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function ShoppingListItem({ item, quantity, completed }) {
+function ShoppingListItem({ item, quantity, completed} ) {
   const styles = {
     color: completed ? "grey" : "red",
     textDecoration: completed ? "line-through" : "none",
