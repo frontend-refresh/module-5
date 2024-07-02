@@ -243,5 +243,6 @@ Here below is result
 
 <img src="render-lis.png" alt="Description of the image" style="border: 1px solid \#fff;">
 
+<img src="color-list.png" alt="Description of the image" style="border: 1px solid \#fff;">
 
 
