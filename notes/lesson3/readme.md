@@ -85,5 +85,5 @@ export default function Clicker() {
 
 Here below is result 
 
-<img src="event-1.png" alt="Description of the image" style="border: 1px solid \#fff;">
+<img src="event-2.png" alt="Description of the image" style="border: 1px solid \#fff;">
 
